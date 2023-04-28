@@ -650,7 +650,7 @@ input {
 }
 iframe{
   height: 720px;
-  width: 1024px;
+  width: 1280px;
 }
 .subscribe__title, 
 .subscribe__description {
@@ -876,10 +876,10 @@ iframe{
   }
   iframe{
     height: 240px;
-    width: 360px;
+    width: 100%;
   }
 }
-@media (max-width:567px) {
+@media (min-width:481px) and (max-width:567px) {
   .place__container {
     grid-template-columns: max-content;
     justify-content: center;
@@ -910,7 +910,7 @@ iframe{
   }
   iframe{
     height: 360px;
-    width: 480px;
+    width: 100%;
   }
 }
 /* For medium devices */
@@ -936,7 +936,7 @@ iframe{
   }
   iframe{
     height: 360px;
-    width: 480px;
+    width: 100%;
   }
 }
 
@@ -1060,6 +1060,10 @@ iframe{
     flex-direction: row;
     justify-content: space-between;
   }
+  iframe{
+    height: 480px;
+    width: 720px;
+  }
 }
 
 /* For large devices */
@@ -1130,7 +1134,7 @@ iframe{
   }
   iframe{
     height: 480px;
-    width: 720px;
+    width: 640px;
   }
 }
 
@@ -1140,7 +1144,7 @@ iframe{
   }
   iframe{
     height: 720px;
-    width: 1024px;
+    width: 1028px;
   }
 }
 

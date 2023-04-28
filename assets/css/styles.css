@@ -71,7 +71,7 @@
 }
 
 /*========== Variables Dark theme ==========*/
-body.dark-theme {
+body {
   --first-color-second: hsl(var(--hue-color), 54%, 12%);
   --title-color: hsl(var(--hue-color), 24%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
@@ -648,7 +648,10 @@ input {
   background-color: var(--first-color-second);
   padding: 2.5rem 0;
 }
-
+iframe{
+  height: 1280px;
+  width: 720px;
+}
 .subscribe__title, 
 .subscribe__description {
   color: var(--white-color);
@@ -657,7 +660,7 @@ input {
 .subscribe__description {
   text-align: center;
   border: 2px solid #fff;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -829,6 +832,17 @@ input {
   .video__container {
     padding: 0;
   }
+  .subscribe__container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  iframe{
+    height: 320px;
+    width: 240px;
+  }
 }
 
 /* For medium devices */
@@ -844,6 +858,17 @@ input {
   .subscribe__form {
     width: 470px;
     margin: 0 auto;
+  }
+  .subscribe__container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  iframe{
+    height: 480px;
+    width: 360px;
   }
 }
 
@@ -948,13 +973,20 @@ input {
     background: none;
     padding: 0;
   }
-  .subscribe__container {
-    background-color: var(--first-color-second);
-    padding: 3.5rem 0;
+  .subscribe__container{
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .subscribe__container {
+    background-color: var(--first-color-second);
+    padding: 3.5rem 0;
+    text-align: center;
+  }
+  .subscribe__description{
+    margin-left: 1rem;
   }
   .subscribe__input {
     padding: 0 .5rem;
@@ -1031,11 +1063,19 @@ input {
   .footer__content {
     justify-items: center;
   }
+  iframe{
+    height: 720px;
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1024px;
+  }
+  iframe{
+    height: 1024px;
+    width: 720px;
   }
 }
 

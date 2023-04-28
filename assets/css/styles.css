@@ -841,10 +841,78 @@ iframe{
   }
   iframe{
     height: 240px;
-    width: 320px;
+    width: 360px;
   }
 }
 
+@media (max-width:480px) {
+  .place__container {
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+  .experience__content {
+    padding: 0;
+  }
+  .experience__overlay:nth-child(1) {
+    width: 190px;
+  }
+  .experience__overlay:nth-child(2) {
+    width: 80px;
+  }
+  .home__info {
+    width: 190px;
+    padding: 1rem;
+  }
+  .experience__img,
+  .video__container {
+    padding: 0;
+  }
+  .subscribe__container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  iframe{
+    height: 240px;
+    width: 360px;
+  }
+}
+@media (max-width:567px) {
+  .place__container {
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+  .experience__content {
+    padding: 0;
+  }
+  .experience__overlay:nth-child(1) {
+    width: 190px;
+  }
+  .experience__overlay:nth-child(2) {
+    width: 80px;
+  }
+  .home__info {
+    width: 190px;
+    padding: 1rem;
+  }
+  .experience__img,
+  .video__container {
+    padding: 0;
+  }
+  .subscribe__container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  iframe{
+    height: 360px;
+    width: 480px;
+  }
+}
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .video__container {
@@ -995,7 +1063,7 @@ iframe{
 }
 
 /* For large devices */
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .container {
     margin-left: auto;
     margin-right: auto;

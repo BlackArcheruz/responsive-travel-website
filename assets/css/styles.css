@@ -973,17 +973,14 @@ iframe{
     background: none;
     padding: 0;
   }
-  .subscribe__container{
+  .subscribe__container {
+    background-color: var(--first-color-second);
+    padding: 3.5rem 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .subscribe__container {
-    background-color: var(--first-color-second);
-    padding: 3.5rem 0;
-    text-align: center;
   }
   .subscribe__description{
     margin-left: 1rem;

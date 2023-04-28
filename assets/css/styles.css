@@ -649,8 +649,8 @@ input {
   padding: 2.5rem 0;
 }
 iframe{
-  height: 1280px;
-  width: 720px;
+  height: 720px;
+  width: 1024px;
 }
 .subscribe__title, 
 .subscribe__description {
@@ -840,8 +840,8 @@ iframe{
     align-items: center;
   }
   iframe{
-    height: 320px;
-    width: 240px;
+    height: 240px;
+    width: 320px;
   }
 }
 
@@ -867,8 +867,8 @@ iframe{
     align-items: center;
   }
   iframe{
-    height: 480px;
-    width: 360px;
+    height: 360px;
+    width: 480px;
   }
 }
 
@@ -1064,8 +1064,8 @@ iframe{
     justify-items: center;
   }
   iframe{
-    height: 720px;
-    width: 480px;
+    height: 480px;
+    width: 720px;
   }
 }
 
@@ -1074,8 +1074,8 @@ iframe{
     max-width: 1024px;
   }
   iframe{
-    height: 1024px;
-    width: 720px;
+    height: 720px;
+    width: 1024px;
   }
 }
 

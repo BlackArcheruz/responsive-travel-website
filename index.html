@@ -14,8 +14,9 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/micromodal.css">
         
-        <script src="/js/micromodal.js"></script>
+      
 
         <title>Redstar Travel</title>
     </head>
@@ -55,27 +56,18 @@
                     <div class="home__data">
                         <span class="home__data-subtitle">Biz bilan endi</span>
                         <h1 class="home__data-title"><b>Xitoy siz <br/>uchun orzu <br/> emas!</b></h1>
-  <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-        <header class="modal__header">
-          <h2 class="modal__title" id="modal-1-title">
-            Micromodal
-          </h2>
-          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-        </header>
-        <main class="modal__content" id="modal-1-content">
-          <p>
-            Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
-          </p>
-        </main>
-        <footer class="modal__footer">
-          <button class="modal__btn modal__btn-primary">Continue</button>
-          <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
-        </footer>
-      </div>
+<a href="#first-modal" class="tinymodal-modal button">Buyurtma Berish</a>
+  <aside id="first-modal" class="tinymodal-window">
+<button class="tinymodal-close" style="color: white; padding: .5rem; margin-right:1rem;">X</button>
+	<div class="tinymodal-inner container" style="padding: 1rem; display:flex; flex-direction:column;">
+    	<a href="https://telegram.me/redstar_travel" class="button home__social-link" style="display: flex; justify-content:center; align-items:center; margin-bottom:1rem;">
+<i class="ri-telegram-fill"></i>
+ Telegram orqali buyurtma berish</a>
+    	<a href="tel: +998957717147" class="button home__social-link" style="display: flex; justify-content:center; align-items:center;">
+<i class="ri-phone-fill"></i>
+ Qo'ng'iroq qilish</a>
     </div>
-  </div>
+</aside>
                         </div>
 
                     <div class="home__social">
@@ -93,7 +85,18 @@
                         <h2 class="section__title about__title">Har qanday <br> Viza xizmatlari</h2>
                         <p class="about__description">Ta'lim uchun, Biznes uchun va Sayohat uchun Xitoy mamlakatiga vizani olishingizda yordam beramiz.
                         </p>
-                        <a href="#" class="button">Murojaat uchun</a>
+                        <a href="#first-modal" class="tinymodal-modal button">Murojaat uchun</a>
+  <aside id="first-modal" class="tinymodal-window">
+<button class="tinymodal-close" style="color: white; padding: .5rem; margin-right:1rem;">X</button>
+	<div class="tinymodal-inner container" style="padding: 1rem; display:flex; flex-direction:column;">
+    	<a href="https://telegram.me/redstar_travel" class="button home__social-link" style="display: flex; justify-content:center; align-items:center; margin-bottom:1rem;">
+<i class="ri-telegram-fill"></i>
+ Telegram orqali buyurtma berish</a>
+    	<a href="tel: +998957717147" class="button home__social-link" style="display: flex; justify-content:center; align-items:center;">
+<i class="ri-phone-fill"></i>
+ Qo'ng'iroq qilish</a>
+    </div>
+</aside>
                     </div>
 
                     <div class="about__img">
@@ -171,7 +174,7 @@
                 </div>
             </div>
         </footer>
-
+	
             <!--========== SCROLL UP ==========-->
             <a href="#" class="scrollup" id="scroll-up">
                 <i class="ri-arrow-up-line scrollup__icon"></i>
@@ -179,11 +182,24 @@
     
             <!--=============== SCROLL REVEAL===============-->
             <script src="assets/js/scrollreveal.min.js"></script>
+		<script>
+var links = document.querySelectorAll('a.tinymodal-modal');
+
+for (var i = 0; links.length > i; i++) {
+  links[i].addEventListener("click", function(event){  // callback
+    event.preventDefault();
+    var element = this.getAttribute("href");
+    tinyModal.openModal(element, function(){
+    });
+  });
+}
+</script>
             
             <!--=============== SWIPER JS ===============-->
             <script src="assets/js/swiper-bundle.min.js"></script>
     
             <!--=============== MAIN JS ===============-->
             <script src="assets/js/main.js"></script>
+  <script src="assets/js/micromodal.js"></script>
     </body>
 </html>

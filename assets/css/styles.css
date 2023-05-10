@@ -812,7 +812,6 @@ iframe{
 /* For small devices */
 @media screen and (max-width: 340px) {
   .place__container {
-    grid-template-columns: max-content;
     justify-content: center;
   }
   .experience__content {
@@ -847,7 +846,6 @@ iframe{
 
 @media (max-width:480px) {
   .place__container {
-    grid-template-columns: max-content;
     justify-content: center;
   }
   .experience__content {
@@ -881,7 +879,6 @@ iframe{
 }
 @media (min-width:481px) and (max-width:567px) {
   .place__container {
-    grid-template-columns: max-content;
     justify-content: center;
   }
   .experience__content {
@@ -1128,6 +1125,7 @@ iframe{
   }
   .place__card, .place__img {
     height: 263px;
+    width: 100%;
   }
   .footer__content {
     justify-items: center;

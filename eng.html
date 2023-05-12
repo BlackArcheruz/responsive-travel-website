@@ -77,9 +77,14 @@ Order via Telegram</a>
     	<a href="tel: +998957717147" class="button home__social-link" style="display: flex; justify-content:center; align-items:center; margin-bottom:1rem;">
 <i class="ri-phone-fill"></i>
  Call</a>
-<h3 class="about__title" style="color: #000">Place an order: </h3><br>
- <a href="#" class="button home__social-link" style="display: flex; justify-content:center; align-items:center;"> <i class="ri-bank-card-line"></i>
-    8600493288404852</a>
+ <form id="myform">
+    <h3 class="about__title" style="color: #000">Place an order: </h3><br>
+    <input type="text" required placeholder="Full Name:" id="ism" class="subscribe__input" style="background-color: #fff; color: #000; margin-bottom: 1rem; padding:10px 0; border-bottom: 2px solid #000;">
+    <input type="tel" required placeholder="+998900000000" class="subscribe__input" id="tel" style="background-color: #fff; color: #000; margin-bottom: 1rem; padding:10px 0; border-bottom: 2px solid #000;" >
+    <div id="phone_error" class="error hidden"> Please enter a valid phone number </div>
+     <button type="submit" class="button" style="display: flex; justify-content:center; align-items:center;"> <i class="ri-bank-card-line"></i>
+        Buy</button>
+    </form>
 
     </div>
 </aside>
@@ -287,5 +292,27 @@ for (var i = 0; links.length > i; i++) {
             <!--=============== MAIN JS ===============-->
             <script src="assets/js/main.js"></script>
   <script src="assets/js/micromodal.js"></script>
+  <script>
+    function validatePhoneNumber(input_str) {
+    var re = /^[\+]998[389][012345789][0-9]{7}$/;
+  
+    return re.test(input_str);
+  }
+function validateForm(event) {
+    var phone = document.getElementById('tel').value;
+    var ism = document.getElementById('ism').value;
+    if (!validatePhoneNumber(phone)) {
+  
+  document.getElementById('phone_error').classList.remove('hidden');
+    } else {
+  
+  document.getElementById('phone_error').classList.add('hidden');
+      window.location="https://payme.uz/62cd5f3fcad1c75163620aa4"
+    }
+    event.preventDefault();
+}
+  
+document.getElementById('myform').addEventListener('submit', validateForm);
+  </script>
     </body>
 </html>

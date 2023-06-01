@@ -78,12 +78,12 @@ Order via Telegram</a>
 <i class="ri-phone-fill"></i>
  Call</a>
  <form id="myform">
-    <h3 class="about__title" style="color: #000">Place an order: </h3><br>
+<!--     <h3 class="about__title" style="color: #000">Place an order: </h3><br>
     <input type="text" required placeholder="Full Name:" id="ism" class="subscribe__input" style="background-color: #fff; color: #000; margin-bottom: 1rem; padding:10px 0; border-bottom: 2px solid #000;">
     <input type="tel" required placeholder="+998900000000" class="subscribe__input" id="tel" style="background-color: #fff; color: #000; margin-bottom: 1rem; padding:10px 0; border-bottom: 2px solid #000;" >
-    <div id="phone_error" class="error hidden"> Please enter a valid phone number </div>
-     <button type="submit" class="button" style="display: flex; justify-content:center; align-items:center;"> <i class="ri-bank-card-line"></i>
-        Buy</button>
+    <div id="phone_error" class="error hidden"> Please enter a valid phone number </div> -->
+     <a href="https://payme.uz/fallback/merchant/?id=64787ebfc34b8a5ddef9a248"  class="button" style="display: flex; justify-content:center; align-items:center;"> <i class="ri-bank-card-line"></i>
+        Buy</a>
     </form>
 
     </div>
@@ -307,7 +307,7 @@ function validateForm(event) {
     } else {
   
   document.getElementById('phone_error').classList.add('hidden');
-      window.location="https://payme.uz/62cd5f3fcad1c75163620aa4"
+      window.location="https://payme.uz/fallback/merchant/?id=64787ebfc34b8a5ddef9a248"
     }
     event.preventDefault();
 }
